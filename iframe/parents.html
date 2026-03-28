@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 프로그래밍 과제</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            font-family: "맑은 고딕", sans-serif;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            flex-grow: 1;
+        }
+
+        iframe {
+            height: auto;
+            border: none;
+        }
+
+        .video-frame {
+            flex: 3;
+            padding-left: 10%;
+        }
+
+        .list-frame {
+            flex: 7;
+            padding-right: 5%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>학번: 2688061 / 이름: 김승조</h2>
+    </div>
+
+    <div class="container">
+        <iframe src="child1.html" class="video-frame" scrolling="no"></iframe>
+        
+        <iframe src="child2.html" class="list-frame" scrolling="no"></iframe>
+    </div>
+
+</body>
+</html>
