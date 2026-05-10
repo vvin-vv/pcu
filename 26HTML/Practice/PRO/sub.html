@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proj.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>🐾 유기견 센터 '행복한 집'</h1>
+        <p>상처받은 아이들의 따뜻한 가족이 되어주세요.</p>
+    </header>
+
+    <nav>
+        <p>메뉴: [센터 소개] [아이들 보기] <b>[임시보호 신청하기]</b></p>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>📋 임시 보호 신청서 작성</h2>
+
+            <form action="#" method="post">
+                
+                <fieldset>
+                    <legend>신청인 정보</legend>
+                    <p>
+                        <label for="username">성함: </label>
+                        <input type="text" id="username" name="username">
+                    </p>
+                    <p>
+                        <label for="usertel">연락처: </label>
+                        <input type="tel" id="usertel" name="usertel" placeholder="010-0000-0000">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>환경 및 경험</legend>
+                    <p>주거 환경: 
+                        <input type="radio" name="house" id="apt" value="apt"> <label for="apt">아파트</label>
+                        <input type="radio" name="house" id="home" value="home"> <label for="home">단독주택</label>
+                    </p>
+                    <p>반려 경험: 
+                        <input type="checkbox" name="pet1" id="dog"> <label for="dog">강아지</label>
+                        <input type="checkbox" name="pet2" id="cat"> <label for="cat">고양이</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>상세 내용</legend>
+                    <p>
+                        <label for="dogsize">희망 견종 크기: </label>
+                        <select id="dogsize" name="dogsize">
+                            <option value="s">소형견</option>
+                            <option value="m">중형견</option>
+                            <option value="l">대형견</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="comment">신청 동기:</label><br>
+                        <textarea id="comment" name="comment" rows="4" cols="45" placeholder="아이들에게 해주고 싶은 말을 적어주세요."></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="신청하기">
+                <input type="reset" value="다시 쓰기">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>COPYRIGHT &copy; 2026 행복한 집. All rights reserved.</p>
+    </footer>
+</body>
+</html>
